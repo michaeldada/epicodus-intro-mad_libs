@@ -9,5 +9,11 @@ $(document).ready(function(){
     $("#verb1insert").text(verb1);
     $("#noun1insert").text(noun1);
     event.preventDefault();
+    $(".story").removeClass("hidden");
+    $("form").addClass("hidden");
+  });
+  $("#reset").click(function(){
+    $("form").removeClass("hidden");
+    $(".story").addClass("hidden");
   });
 });
